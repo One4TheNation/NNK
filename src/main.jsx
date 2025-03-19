@@ -19,11 +19,17 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = createRoot(document.getElementById("root"));
-root.render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement) {
+  const root = createRoot(rootElement);
+  root.render(
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  );
+} else {
+  console.error("Root element not found");
+}
 
 export default App;
