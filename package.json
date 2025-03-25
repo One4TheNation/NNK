@@ -17,8 +17,10 @@
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
+    "react-router-bootstrap": "^0.26.3",
     "reactstrap": "^9.2.3",
-    "rollup": "^4.36.0"
+    "rollup": "^4.36.0",
+    "run": "^1.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -30,6 +32,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "prettier": "3.5.3",
     "vite": "^6.2.2"
   }
 }
