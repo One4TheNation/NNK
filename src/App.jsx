@@ -1,24 +1,18 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import MainPage from "./pages/MainPage";
-import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <Router>
-      <div className="d-flex flex-column vh-100">
-        <Header />
-        <main className="flex-grow-1">
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
-        </main>
+    <div className="vh-100 d-flex flex-column">
+      <Header />
+      <main className="flex-grow-1">
+        <Outlet />
+      </main>
+      <footer>
         <Footer />
-      </div>
-    </Router>
+      </footer>
+    </div>
   );
 }
 
